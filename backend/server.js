@@ -7,6 +7,7 @@ const connectDatabase=require('./config/database')
 dotenv.config({path:"backend/config/dotenv.config.env"});
 
 
+
 //connecting database
 
 connectDatabase();

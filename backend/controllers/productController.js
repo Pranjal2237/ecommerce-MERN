@@ -25,7 +25,7 @@ exports.getAllProducts=async(req,res)=>{
     const apifeatures=new ApiFeatures(product.find(),req.query).search().filter().pagination(resultPerPage);
     
     const products=await apifeatures.query;
-    res.status(200).json({
+    res.status(200).cookie('check','cookie checked').json({
         success:true,
         products,
         countProduct
